@@ -5,3 +5,4 @@ openshift-1.0.7: https://github.com/konveyor/crane-plugins/raw/main/plugins/open
 OpenshiftPlugin-v1.0.30: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenshiftPlugin-v1.0.30.yml
 OpenshiftPlugin-v1.0.31: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenshiftPlugin-v1.0.31.yml
 OpenshiftPlugin-v1.0.32: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenshiftPlugin-v1.0.32.yml
+OpenshiftPlugin-v0.0.1: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenshiftPlugin-v0.0.1.yml
