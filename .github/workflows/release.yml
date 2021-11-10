@@ -1,0 +1,27 @@
+name: Releases
+on: workflow_dispatch
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout crane-plugins
+        uses: actions/checkout@v2
+
+      - name: Updating index file
+        run: |
+          sed -i 's/main/release/g' index.yml
+          cat index.yml
+          touch test.md
+
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Releasing new crane-plugin manifests" -a
+
+      - name: Push changes to crane-plugins
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release
