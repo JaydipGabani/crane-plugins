@@ -1,0 +1,5 @@
+apiServer: konveyor.io/v1alpha1
+kind: PluginIndex
+plugins:
+- name: OpenShiftPlugin
+  path: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenShift/index.yaml

@@ -1,0 +1,17 @@
+apiServer: konveyor.io/v1alpha1
+kind: Plugin
+versions:
+- binaries:
+  - arch: amd64
+    os: linux
+    uri: https://github.com/JaydipGabani/crane-plugin-openshift/releases/download/v0.0.14/amd64-linux-openshiftplugin-v0.0.14
+  - arch: amd64
+    os: darwin
+    uri: https://github.com/JaydipGabani/crane-plugin-openshift/releases/download/v0.0.14/amd64-darwin-openshiftplugin-v0.0.14
+  - arch: arm64
+    os: darwin
+    uri: https://github.com/JaydipGabani/crane-plugin-openshift/releases/download/v0.0.14/arm64-darwin-openshiftplugin-v0.0.14
+  description: this is OpenShiftPlugin
+  name: OpenShiftPlugin
+  shortDescription: OpenShiftPlugin
+  version: v0.0.14
