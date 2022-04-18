@@ -1,0 +1,21 @@
+apiServer: konveyor.io/v1alpha1
+kind: Plugin
+versions:
+- binaries:
+  - arch: amd64
+    os: linux
+    uri: https://github.com/JaydipGabani/crane-plugin-imagestream/releases/download/v0.0.6/amd64-linux-imagestreamplugin-v0.0.6
+  - arch: amd64
+    os: darwin
+    uri: https://github.com/JaydipGabani/crane-plugin-imagestream/releases/download/v0.0.6/amd64-darwin-imagestreamplugin-v0.0.6
+  - arch: arm64
+    os: darwin
+    uri: https://github.com/JaydipGabani/crane-plugin-imagestream/releases/download/v0.0.6/arm64-darwin-imagestreamplugin-v0.0.6
+  description: this is ImageStreamPlugin
+  name: ImageStreamPlugin
+  optionalFields:
+  - example: docker-registry.default.svc:5000=image-registry.openshift-image-registry.svc:5000,docker.io/foo=quay.io/bar
+    flagName: registry-replacement
+    help: Map of image registry paths to swap on transform, in the format original-registry1=target-registry1,original-registry2=target-registry2...
+  shortDescription: ImageStreamPlugin
+  version: v0.0.6
