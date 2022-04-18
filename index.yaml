@@ -3,3 +3,5 @@ kind: PluginIndex
 plugins:
 - name: ImageStreamPlugin
   path: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/ImageStream/index.yaml
+- name: OpenShiftPlugin
+  path: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenShift/index.yaml
