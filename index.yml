@@ -1,7 +1,0 @@
-apiServer: konveyor.io/v1alpha1
-kind: PluginIndex
-plugins:
-- name: OpenShiftPlugin
-  path: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/OpenShift/index.yaml
-- name: ImageStreamPlugin
-  path: https://github.com/JaydipGabani/crane-plugins/raw/main/plugins/ImageStream/index.yaml
